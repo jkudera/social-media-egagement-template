@@ -2,7 +2,7 @@
   stepsGroups: [
     {
       description: "Provide credentials for the source components.",
-      required: "atLeastOne",
+      required: "optional",
       steps: [
         {
           icon: "common:settings",
