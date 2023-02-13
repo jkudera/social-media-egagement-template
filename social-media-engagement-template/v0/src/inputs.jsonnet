@@ -6,42 +6,65 @@
       steps: [
         
           
-            {
-                icon: "common:settings",
-                id: "ex-linkedin-pages-sync-options-date-from",
-                name: "Sync options Date from",
-                description: "",
-                type: "string",
-                kind: "input",
-                default: "12 months ago",
-              },
+        {
+          icon: "component:keboola.ex-facebook-ads",
+          name: "Facebook Ads",
+          description: "Import data from Facebook Ads",
+          dialogName: "Facebook Ads Source", 
+          dialogDescription: "This source component imports your Facebook Ads Manager data, such as campaigns, adsets, ads insights, and more.",
+          inputs: [
               {
-                icon: "common:settings",
-                id: "ex-linkedin-pages-sync-options-date-to",
-                name: "Sync options Date to",
-                description: "",
-                type: "string",
-                kind: "input",
-                default: "now",
-              },
+                  id: "ex-facebook-queries-2-query-fields",
+                  name: "Queries Query Fields",
+                  description: "facebook",
+                  type: "string",
+                  kind: "input",
+                  default: "insights.since(90 days ago).until(today).metric(page_views_total, page_fan_removes, page_fan_adds, page_fans, page_negative_feedback, page_consumptions, page_engaged_users, page_impressions)",
+                },
+          ]
+        },
+        {
+          icon: "component:leochan.ex-linkedin",
+          name: "LinkedIn Ads",
+          description: "Import data from LinkedIn Page",
+          dialogName: "LinkedIn Pages Source", 
+          dialogDescription: "This source component imports data from LinkedIn Page",
+          inputs: [
               {
-                icon: "common:settings",
-                id: "ex-facebook-queries-2-query-fields",
-                name: "Queries Query Fields",
-                description: "",
-                type: "string",
-                kind: "input",
-                default: "insights.since(90 days ago).until(today).metric(page_views_total, page_fan_removes, page_fan_adds, page_fans, page_negative_feedback, page_consumptions, page_engaged_users, page_impressions)",
-              },
+                  id: "ex-linkedin-pages-sync-options-date-from",
+                  name: "Sync options Date from",
+                  description: "linkedin",
+                  type: "string",
+                  kind: "input",
+                  default: "12 months ago",
+                },
+                {
+                  id: "ex-linkedin-pages-sync-options-date-to",
+                  name: "Sync options Date to",
+                  description: "linkedin",
+                  type: "string",
+                  kind: "input",
+                  default: "now",
+                },
+          ]
+        },
+        {
+          icon: "component:keboola.ex-google-ads",
+          name: "Instagram",
+          description: "Import data from Instagram",
+          dialogName: "Instagram", 
+          dialogDescription: "This source component imports data from Instagram",
+          inputs: [
               {
-                icon: "common:settings",
-                id: "ex-instagram-queries-2-query-fields",
-                name: "Queries Query Fields",
-                description: "",
-                type: "string",
-                kind: "input",
-                default: "insights.since(30 days ago).period(day).metric(reach,impressions,follower_count,email_contacts,text_message_clicks,get_directions_clicks,phone_call_clicks,website_clicks,profile_views)",
-              },
+                  id: "ex-instagram-queries-2-query-fields",
+                  name: "Queries Query Fields",
+                  description: "faceboook",
+                  type: "string",
+                  kind: "input",
+                  default: "insights.since(30 days ago).period(day).metric(reach,impressions,follower_count,email_contacts,text_message_clicks,get_directions_clicks,phone_call_clicks,website_clicks,profile_views)",
+                },
+          ]
+        },
           
         
       ],
