@@ -57,30 +57,35 @@
       path: "other/keboola.orchestrator/social-media-engagement",
       rows: [],
     },
+    if ComponentIsAvailable("keboola.ex-facebook") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-facebook"),
       path: "transformation/keboola.snowflake-transformation/transformation-in-social-media-engagement-facebook",
       rows: [],
     },
+    if ComponentIsAvailable("keboola.ex-instagram") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-instagram"),
       path: "transformation/keboola.snowflake-transformation/transformation-in-social-media-engagement-instagram",
       rows: [],
     },
+    if ComponentIsAvailable("kds-team.ex-linkedin-pages") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-linkedin"),
       path: "transformation/keboola.snowflake-transformation/transformation-in-social-media-engagement-linkedin",
       rows: [],
     },
+    if ComponentIsAvailable("keboola.ex-twitter") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-twitter"),
       path: "transformation/keboola.snowflake-transformation/transformation-in-social-media-engagement-twitter",
       rows: [],
     },
+    if ComponentIsAvailable("keboola.ex-youtube") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-youtube"),
