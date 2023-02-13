@@ -5,11 +5,9 @@
       required: "optional",
       steps: [
         {
-          icon: "common:settings",
-          name: "Default Step",
-          description: "Default Step",
-          inputs: [
+          
             {
+                icon: "common:settings",
                 id: "ex-linkedin-pages-sync-options-date-from",
                 name: "Sync options Date from",
                 description: "",
@@ -18,6 +16,7 @@
                 default: "12 months ago",
               },
               {
+                icon: "common:settings",
                 id: "ex-linkedin-pages-sync-options-date-to",
                 name: "Sync options Date to",
                 description: "",
@@ -26,6 +25,7 @@
                 default: "now",
               },
               {
+                icon: "common:settings",
                 id: "ex-facebook-queries-2-query-fields",
                 name: "Queries Query Fields",
                 description: "",
@@ -34,6 +34,7 @@
                 default: "insights.since(90 days ago).until(today).metric(page_views_total, page_fan_removes, page_fan_adds, page_fans, page_negative_feedback, page_consumptions, page_engaged_users, page_impressions)",
               },
               {
+                icon: "common:settings",
                 id: "ex-instagram-queries-2-query-fields",
                 name: "Queries Query Fields",
                 description: "",
@@ -41,7 +42,7 @@
                 kind: "input",
                 default: "insights.since(30 days ago).period(day).metric(reach,impressions,follower_count,email_contacts,text_message_clicks,get_directions_clicks,phone_call_clicks,website_clicks,profile_views)",
               },
-          ],
+          
         },
       ],
     },{   
