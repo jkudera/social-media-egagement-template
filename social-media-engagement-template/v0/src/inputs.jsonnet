@@ -4,7 +4,7 @@
       description: "Provide credentials for the source components.",
       required: "optional",
       steps: [
-        {
+        
           
             {
                 icon: "common:settings",
@@ -43,7 +43,7 @@
                 default: "insights.since(30 days ago).period(day).metric(reach,impressions,follower_count,email_contacts,text_message_clicks,get_directions_clicks,phone_call_clicks,website_clicks,profile_views)",
               },
           
-        },
+        
       ],
     },{   
       description: "dbt Transformation",
