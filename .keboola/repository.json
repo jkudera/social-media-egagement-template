@@ -4,5 +4,31 @@
     "name": "Example Author",
     "url": "https://example.com"
   },
-  "templates": []
+  "templates": [
+    {
+      "id": "social-media-engagement-template",
+      "name": "Social Media Engagement Template",
+      "description": "Social Media Engagement Template Short Description Full workflow to ...",
+      "path": "social-media-engagement-template",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": [
+            "keboola.ex-facebook",
+            "keboola.ex-instagram",
+            "keboola.ex-twitter",
+            "keboola.ex-youtube",
+            "keboola.wr-db-mysql",
+            "keboola.wr-db-pgsql",
+            "keboola.wr-google-sheets",
+            "keboola.wr-snowflake-blob-storage",
+            "kds-team.ex-linkedin-pages"
+          ],
+          "path": "v0"
+        }
+      ]
+    }
+  ]
 }
