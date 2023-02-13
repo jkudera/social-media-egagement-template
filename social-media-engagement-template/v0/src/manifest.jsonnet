@@ -1,5 +1,6 @@
 {
   configurations: [
+    if InputIsAvailable("ex-linkedin-pages-sync-options-date-from") then
     {
       componentId: "kds-team.ex-linkedin-pages",
       id: ConfigId("data-source-in-social-media-engagement-linkedin-pages"),
@@ -33,7 +34,6 @@
       path: "extractor/keboola.ex-facebook/data-source-in-social-media-engagement-facebook-pages",
       rows: [],
     },
-    if InputIsAvailable("ex-linkedin-pages-sync-options-date-from") then
     {
       componentId: "keboola.ex-instagram",
       id: ConfigId("data-source-in-social-media-engagement-instagram"),
@@ -58,7 +58,6 @@
       path: "other/keboola.orchestrator/social-media-engagement",
       rows: [],
     },
-    if ComponentIsAvailable("kds-team.ex-linkedin-pages") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-facebook"),
@@ -71,7 +70,7 @@
       path: "transformation/keboola.snowflake-transformation/transformation-in-social-media-engagement-instagram",
       rows: [],
     },
-    if ComponentIsAvailable("keboola.ex-facebook") then
+    if ComponentIsAvailable("kds-team.ex-linkedin-pages") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-social-media-engagement-linkedin"),
