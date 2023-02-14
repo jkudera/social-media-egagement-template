@@ -19,7 +19,7 @@ Finally, the united data are exported to the destination tables
 **Output table - pages_engagement:**
 
 | metric / social network | Facebook | Instagram | LinkedIn | Twitter | YouTube |
-|-------------------------|----------|-----------|----------|---------|---------|
+|-------------------------|:----------:|:-----------:|:----------:|:---------:|:---------|
 | page_followers          |     ✅    |     ✅     |     ✅    |    ✅    |    ❌    |
 | page_posts_impressions  |     ✅    |     ✅     |     ✅    |    ❌    |    ❌    |
 | page_views_total        |     ✅    |     ✅     |     ✅    |    ❌    |    ❌    |
