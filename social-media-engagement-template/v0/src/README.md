@@ -2,9 +2,9 @@
 
 With this flow, you can get aggregated engagement data from different social networks. The output is two tables, first table pages_engagement of daily metrics for each social media and the second posts_engagement table containing all posts from selected social media.
 
-The flow, in a nutshell:
+### The flow, in a nutshell:
 
-First, the data source components obtain data from chosen social networks.
+1. First, the data source components obtain data from chosen social networks.
 Currently are available:
 - Facebook
 - Instagram
@@ -12,14 +12,14 @@ Currently are available:
 - LinkedIn
 - Twitter - announced the end of free API
 
-The transformation fills Nulls in missing columns, converts dates to a standard format, and adds information about the source social network to the source column.
+2. The transformation fills Nulls in missing columns, converts dates to a standard format, and adds information about the source social network to the source column.
 
-Finally, the united data are exported to the destination tables
+3. Finally, the united data are exported to the destination tables
 
 **Output table - pages_engagement:**
 
 | metric / social network | Facebook | Instagram | LinkedIn | Twitter | YouTube |
-|-------------------------|:----------:|:-----------:|:----------:|:---------:|:---------|
+|-------------------------|:----------:|:-----------:|:----------:|:---------:|:---------:|
 | page_followers          |     ✅    |     ✅     |     ✅    |    ✅    |    ❌    |
 | page_posts_impressions  |     ✅    |     ✅     |     ✅    |    ❌    |    ❌    |
 | page_views_total        |     ✅    |     ✅     |     ✅    |    ❌    |    ❌    |
