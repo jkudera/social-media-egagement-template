@@ -1,14 +1,17 @@
 {
   parameters: {
     db: {
-      port: Input("wr-snowflake-blob-storage-db-port"),
-      schema: Input("wr-snowflake-blob-storage-db-schema"),
-      warehouse: Input("wr-snowflake-blob-storage-db-warehouse"),
-      driver: Input("wr-snowflake-blob-storage-db-driver"),
-      host: Input("wr-snowflake-blob-storage-db-host"),
-      user: Input("wr-snowflake-blob-storage-db-user"),
-      database: Input("wr-snowflake-blob-storage-db-database"),
-      "#password": Input("wr-snowflake-blob-storage-db-password"),
+      driver: "snowflake",
+      port: Input("wr-snowflake-db-port"),
+      host: Input("wr-snowflake-db-host"),
+      user: Input("wr-snowflake-db-user"),
+      "#password": Input("wr-snowflake-db-password"),
+      database: Input("wr-snowflake-db-database"),
+      schema: Input("wr-snowflake-db-schema"),
+      warehouse: Input("wr-snowflake-db-warehouse"),
     },
+  },
+  runtime: {
+    parallelism: null,
   },
 }

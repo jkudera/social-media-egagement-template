@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: "28984671",
-      version: 3,
-    },
+    oauth_api: Input("oauth-twitter"),
   },
   parameters: {
     api: {
@@ -52,7 +49,7 @@
             keboola_source: "userTimeline",
           },
           params: {
-            screen_name: "keboola",
+            screen_name: Input("userTimeline_screen_name"),
           },
           dataMapping: {
             id: {
@@ -292,7 +289,7 @@
           params: {
             skip_status: true,
             include_user_entities: false,
-            screen_name: "keboola",
+            screen_name: Input("followersList_screen_name"),
           },
           dataMapping: {
             id: {

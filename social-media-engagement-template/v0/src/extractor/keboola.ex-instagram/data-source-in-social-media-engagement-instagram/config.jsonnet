@@ -1,15 +1,9 @@
 {
-  parameters: {
-    accounts: {
-      "17841400386756501": {
-        name: "Coffee to Home",
-        category: "Specialty Grocery Store",
-        id: "17841400386756501",
-        fb_page_id: "683499195074649",
-      },
-    },
-    "api-version": "v14.0",
-    queries: [
+  authorization: {
+    oauth_api: Input("oauth-instagram")
+  },
+  parameters: Input("oauth-instagram-accounts") + {
+  queries: [
       {
         id: 13831,
         type: "nested-query",
@@ -38,17 +32,11 @@
         name: "page_daily_insights",
         query: {
           path: "",
-          fields: Input("ex-instagram-queries-2-query-fields"),
+          fields: "insights.date_preset("+Input("ex-instagram-since")+").metric(reach,impressions,follower_count,email_contacts,text_message_clicks,get_directions_clicks,phone_call_clicks,website_clicks,profile_views)",
           limit: "25",
           ids: "",
         },
       },
     ],
-  },
-  authorization: {
-    oauth_api: {
-      id: "34211636",
-      version: 3,
-    },
   },
 }

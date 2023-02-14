@@ -1,31 +1,28 @@
 {
   authorization: {
-    oauth_api: {
-      id: "34214631",
-      version: 3,
-    },
+    oauth_api: Input("oauth-googlesheet"),
   },
   parameters: {
     tables: [
       {
         id: 69562,
         action: "update",
-        sheetTitle: "Sheet1",
+        sheetTitle: "PagesEngagement",
         enabled: true,
         tableId: "out.c-social-media-engagement.pages_engagement",
-        title: "pages_engagement",
-        fileId: "1opyy1TdkBg6qtg0pmveMNo9KRbVstOydqXlehjVkhlM",
-        sheetId: 0,
+        title: "PagesAndPostsEngagement",
+        fileId: Input("google-sheet-id"),
+        sheetId: 0, // musí se doplnit dle vzorového google sheetu
       },
       {
         id: 37237,
         action: "update",
-        sheetTitle: "Sheet1",
+        sheetTitle: "PostsEngagement",
         enabled: true,
         tableId: "out.c-social-media-engagement.posts_engagement",
-        title: "posts_engagement",
-        fileId: "1U-A8gMBQQewOtcu5xNE_qjVh9ba6RD36CWjWHMNB7To",
-        sheetId: 0,
+        title: "PagesAndPostsEngagement",
+        fileId: Input("google-sheet-id"),
+        sheetId: 795055650, // musí se doplnit dle vzorového google sheetu
       },
     ],
   },

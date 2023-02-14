@@ -1,29 +1,8 @@
 {
   authorization: {
-    oauth_api: {
-      id: "28660296",
-      version: 3,
-    },
+    oauth_api: Input("oauth-facebookads"),
   },
-  parameters: {
-    accounts: {
-      "177057932317550": {
-        category: "Business consultant",
-        category_list: [
-          {
-            id: "179672275401610",
-            name: "Business consultant",
-          },
-          {
-            id: "1130035050388269",
-            name: "Information technology company",
-          },
-        ],
-        name: "Keboola",
-        id: "177057932317550",
-      },
-    },
-    "api-version": "v3.3",
+  parameters: Input("oauth-facebookads-accounts") + {
     queries: [
       {
         id: 13510,
@@ -32,8 +11,8 @@
         query: {
           path: "feed",
           fields: "message,created_time,shares,actions,status_type,from,call_to_action,post_impressions,post_impressions_unique, engagement, post_negative_feedback, post_engaged_users, post_consumptions, post_impressions_fan, post_impressions_paid,  page_posts_impressions_organic, page_posts_impressions_paid, page_posts_impressions",
-          limit: "25",
-          ids: "177057932317550",
+          limit: "100",
+          ids: "",
         },
         disabled: false,
       },
@@ -44,7 +23,7 @@
         query: {
           path: "feed",
           fields: "reactions.type(LIKE).summary(total_count).limit(0)",
-          limit: "25",
+          limit: "100",
           ids: "",
         },
       },
@@ -54,8 +33,8 @@
         name: "page_insights",
         query: {
           path: "",
-          fields: Input("ex-facebook-queries-2-query-fields"),
-          limit: "25",
+          fields: "insights.date_preset("+Input("ex-facebook-ads-since")+").metric(page_views_total, page_fan_removes, page_fan_adds, page_fans, page_negative_feedback, page_consumptions, page_engaged_users, page_impressions)",
+          limit: "100",
           ids: "",
           since: "",
           until: "",

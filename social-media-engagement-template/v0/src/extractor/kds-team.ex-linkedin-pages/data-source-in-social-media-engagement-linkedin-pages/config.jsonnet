@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: "32787386",
-      version: 3,
-    },
+    oauth_api: Input("oauth-linkedinads"),
   },
   parameters: {
     organizations: "",

@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: "28984677",
-      version: 3,
-    },
+    oauth_api: Input("oauth-youtube"),
   },
   parameters: {
     api: {
