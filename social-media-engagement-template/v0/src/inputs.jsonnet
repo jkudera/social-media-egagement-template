@@ -9,7 +9,7 @@
           name: "Facebook Pages",
           description: "Import data from Facebook Pages",
           dialogName: "Facebook Pages Source", 
-          dialogDescription: "This source component imports your Facebook Pages data such as ...",
+          dialogDescription: "This source component imports posts engagement and page engagement from your Facebook Pages",
           inputs: [
             {
               id:          "oauth-facebookads",
@@ -18,7 +18,7 @@
               type:        "object",
               kind:        "oauth",
               componentId: "keboola.ex-facebook",
-              //rules:       "required",
+              rules:       "required",
             },
             {
               id:           "oauth-facebookads-accounts",
@@ -27,7 +27,7 @@
               type:         "object",
               kind:         "oauthAccounts",
               oauthInputId: "oauth-facebookads",
-              //rules:        "required",
+              rules:        "required",
             },
             {
               id: "ex-facebook-ads-since",
@@ -62,7 +62,7 @@
           name: "LinkedIn Pages",
           description: "Import data from LinkedIn Pages",
           dialogName: "LinkedIn Pages Source", 
-          dialogDescription: "This source component imports your LinkedIn Page data such as ...",
+          dialogDescription: "This source component imports posts engagement and page engagement from your LinkedIn Page",
           inputs: [
             {
               id:          "oauth-linkedinads",
@@ -71,7 +71,7 @@
               type:        "object",
               kind:        "oauth",
               componentId: "leochan.ex-linkedin",
-              //rules:       "required",
+              rules:       "required",
             },
             {
               id: "ex-linkedin-pages-sync-options-date-from",
@@ -104,10 +104,10 @@
         }, 
         {
           icon: "component:keboola.ex-instagram",
-          name: "Facebook Pages",
-          description: "Import data from Facebook Pages",
-          dialogName: "Facebook Pages Source", 
-          dialogDescription: "This source component imports your Facebook Pages data such as ...",
+          name: "Instagram",
+          description: "Import data from Instagram",
+          dialogName: "Instagram Source", 
+          dialogDescription: "This source component imports posts engagement and page engagement from your Instagram account",
           inputs: [
             {
               id:          "oauth-instagram",
@@ -116,7 +116,7 @@
               type:        "object",
               kind:        "oauth",
               componentId: "keboola.ex-instagram",
-              //rules:       "required",
+              rules:       "required",
             },
             {
               id:           "oauth-instagram-accounts",
@@ -125,7 +125,7 @@
               type:         "object",
               kind:         "oauthAccounts",
               oauthInputId: "oauth-instagram",
-              //rules:        "required",
+              rules:        "required",
             },
             {
               id: "ex-instagram-since",
@@ -160,7 +160,7 @@
           name: "Twitter Page",
           description: "Import data from Twitter Page",
           dialogName: "Twitter Pages Source", 
-          dialogDescription: "This source component imports your Twitter Pages data such as ...",
+          dialogDescription: "This source component imports posts engagement and page engagement from your Twitter account",
           inputs: [
             {
               id:          "oauth-twitter",
@@ -169,7 +169,7 @@
               type:        "object",
               kind:        "oauth",
               componentId: "keboola.ex-twitter",
-              //rules:       "required",
+              rules:       "required",
             },
             {
               id: "followersList_screen_name",
@@ -191,10 +191,10 @@
         },
         {
           icon: "component:keboola.ex-youtube",
-          name: "Youtube Page",
-          description: "Import data from Youtube Page",
-          dialogName: "Youtube Pages Source", 
-          dialogDescription: "This source component imports your Youtube Pages data such as ...",
+          name: "Youtube Channel",
+          description: "Import data from Youtube Channel",
+          dialogName: "Youtube Channel Source", 
+          dialogDescription: "This source component imports posts (videos) engagement from your Youtube Channel",
           inputs: [
             {
               id:          "oauth-youtube",
@@ -203,7 +203,7 @@
               type:        "object",
               kind:        "oauth",
               componentId: "keboola.ex-youtube",
-              //rules:       "required",
+              rules:       "required",
             }
           ]
         },         
@@ -405,7 +405,7 @@
           name: "Google sheet Destination",
           description: "Load to data into google sheet",
           dialogName: "Google Sheet Destination", 
-          dialogDescription: "Make a copy of [this sheet](www.sheet.com) into your Drive. Copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
+          dialogDescription: "Make a copy of [this sheet](https://docs.google.com/spreadsheets/d/1BFXwTno70hJIZJWQ_iHW26qZvjCIQmxLAg1W93gQTrM/edit?usp=sharing) into your Drive. Copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
           inputs: [
             {
               id:          "oauth-googlesheet",

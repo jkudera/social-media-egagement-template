@@ -22,7 +22,7 @@
         name: "feed_likes",
         query: {
           path: "feed",
-          fields: "reactions.type(LIKE).summary(total_count).limit(0)",
+          fields: "reactions.date_preset("+Input("ex-facebook-ads-since")+").type(LIKE).summary(total_count).limit(0)",
           limit: "100",
           ids: "",
         },

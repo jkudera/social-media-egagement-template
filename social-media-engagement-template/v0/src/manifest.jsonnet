@@ -141,7 +141,7 @@
     },
     if InputIsAvailable("wr-snowflake-db-host") then
     {
-      componentId: "keboola.wr-snowflake-blob-storage",
+      componentId: SnowflakeWriterComponentId(),
       id: ConfigId("data-destination-out-social-media-engagement-snowflake"),
       path: "writer/keboola.wr-snowflake-blob-storage/data-destination-out-social-media-engagement-snowflake",
       rows: [
