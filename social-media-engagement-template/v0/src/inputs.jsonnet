@@ -160,7 +160,7 @@
           name: "Twitter Page",
           description: "Import data from Twitter Page",
           dialogName: "Twitter Pages Source", 
-          dialogDescription: "This source component imports posts engagement and page engagement from your Twitter account",
+          dialogDescription: "This source component imports all posts engagement and page engagement (since this day) from your Twitter account",
           inputs: [
             {
               id:          "oauth-twitter",
@@ -194,7 +194,7 @@
           name: "Youtube Channel",
           description: "Import data from Youtube Channel",
           dialogName: "Youtube Channel Source", 
-          dialogDescription: "This source component imports posts (videos) engagement from your Youtube Channel",
+          dialogDescription: "This source component imports all posts (videos) engagement from your Youtube Channel",
           inputs: [
             {
               id:          "oauth-youtube",
