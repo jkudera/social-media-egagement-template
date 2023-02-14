@@ -6,11 +6,11 @@ With this flow, you can get aggregated engagement data from different social net
 
 1. First, the data source components obtain data from chosen social networks.
 Currently are available:
-- Facebook
-- Instagram
-- YouTube
-- LinkedIn
-- Twitter - announced the end of free API
+    - Facebook
+    - Instagram
+    - YouTube
+    - LinkedIn
+    - Twitter - announced the end of free API
 
 2. The transformation fills Nulls in missing columns, converts dates to a standard format, and adds information about the source social network to the source column.
 
